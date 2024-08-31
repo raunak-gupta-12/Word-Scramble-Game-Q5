@@ -1,0 +1,90 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #3571AE;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.word-display p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  display: inline;
+}
+
+.word-display p.n2{
+  color: blanchedalmond;
+}
+
+.input-field input {
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.feedback p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #ffecb3;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #45A049;
+}
+
+.controls p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .word-display p, .feedback p {
+    font-size: 20px;
+  }
+
+  .input-field input {
+    width: 100%;
+  }
+}
